@@ -13,9 +13,9 @@ mat = User.create(email: "mat@codaisseurup.com", password: "abcd1234")
 puts "#{User.all.size} users created"
 
 # Photos
-photo1 = Photo.create(remote_image_url: "http://res.cloudinary.com/dnwkjak4p/image/upload/v1489331995/yoga_dog_03_iy1ukm.jpg")
-photo2 = Photo.create(remote_image_url: "http://res.cloudinary.com/dnwkjak4p/image/upload/v1489331985/yoga_dog_02_affayd.jpg")
-photo3 = Photo.create(remote_image_url: "http://res.cloudinary.com/dnwkjak4p/image/upload/v1489331989/yoga_dog_01_swh1ea.jpg")
+photo1 = Photo.create(remote_image_url: "http://res.cloudinary.com/djkfht9fq/image/upload/v1496056261/7-Steps-to-a-Life-Long-Yoga-Practice-Youll-Love_ushvty.jpg")
+photo2 = Photo.create(remote_image_url: "http://res.cloudinary.com/djkfht9fq/image/upload/v1496056260/yoga-class-weston-florida-415x248_gxxb8f.jpg")
+photo3 = Photo.create(remote_image_url: "http://res.cloudinary.com/djkfht9fq/image/upload/v1496056260/yoga-pokhydenye_ephg7m.jpg")
 
 puts "#{Photo.all.size} photos created"
 
