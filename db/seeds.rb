@@ -9,6 +9,7 @@ User.delete_all
 miriam = User.create(email: "miriam@codaisseurup.com", password: "abcd1234")
 wouter = User.create(email: "wouter@codaisseurup.com", password: "abcd1234")
 mat = User.create(email: "mat@codaisseurup.com", password: "abcd1234")
+omar = User.create(email: "omar@codaisseurup.com", password: "abcd1234")
 
 puts "#{User.all.size} users created"
 
@@ -21,8 +22,8 @@ puts "#{Photo.all.size} photos created"
 
 # Events
 event = Event.create!(
-  name: "Monthly Yoga Weekend",
-  description: "Let's come together and practice some asanas together in the woods!",
+  name: "Monthly Yoga Class",
+  description: "Let's go together and practice some asanas together in the most beautiful city !",
   location: "Amsterdam",
   includes_food: false,
   includes_drinks: true,
@@ -31,7 +32,7 @@ event = Event.create!(
   ends_at: 12.days.from_now,
   capacity: 100,
   active: true,
-  user: miriam,
+  user: omar,
   photos: [photo1, photo2, photo3],
 )
 
@@ -53,7 +54,7 @@ Category.create!([
 puts "#{Category.all.size} categories created"
 
 # Events
-event = Event.find_by(name: "Monthly Yoga Weekend")
+event = Event.find_by(name: "Monthly Yoga Class")
 event.categories << Category.find_by(name: "Outdoors & Adventure")
 event.categories << Category.find_by(name: "Sports & Fitness")
 
